@@ -1,0 +1,56 @@
+@import '//fonts.googleapis.com/css?family=Comfortaa:300,700';
+@import "variables";
+
+#ratify-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-family: Comfortaa, Helvetica, Arial, sans-serif;
+  color: #334D5B;
+  margin-right: 20px;
+
+  hr {
+    border: 1px solid #747577;
+    width: 100%;
+  }
+
+  h1, h2, h3, h4 {
+    margin-bottom: 0.33em;
+  }
+
+  a {
+    text-decoration: none;
+    color: #167D9D;
+  }
+
+  .ratify-panel {
+    background-color: white;
+    margin: 10px 0px;
+    color: black;
+    background-position: 10px 15px;
+    background-repeat: no-repeat;
+    box-shadow: 5px 10px 15px #B1B4B5;
+    background-size: 40px;
+    padding-left: 60px;
+    min-height: 60px;
+
+    @media screen and (min-width:783px) {
+        background-position: 20px 15px;
+        background-size: 80px;
+        padding-left: 120px;
+        min-height: 92px;
+    }
+
+    .code {
+      color: #7897A0;
+    }
+
+    &.ok {
+      background-image: url('../images/check.png');
+    }
+
+    &.error {
+      background-image: url('../images/x-mark.png');
+    }
+  }
+}

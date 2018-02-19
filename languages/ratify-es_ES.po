@@ -1,0 +1,428 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Ratify\n"
+"POT-Creation-Date: 2018-02-19 00:13+0000\n"
+"PO-Revision-Date: 2018-02-19 00:14+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: ratify-plugin.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: App/Controllers/RatifyReportGenerator.php:24
+msgid "The cache has been refreshed!"
+msgstr "¡La memoria caché ha sido refrescada!"
+
+#: App/Controllers/RatifyReportGenerator.php:103
+msgid "Ratify Error"
+msgstr ""
+
+#: App/Controllers/RatifyReportGenerator.php:105
+msgid "Oops! We were unable to retrieve the home page."
+msgstr ""
+"¡Huy! Lo sentimos pero no hemos sido capaces de descargar la página de "
+"inicio."
+
+#: App/Models/RatTestAltAttributesOnImages.php:8
+msgid "IMAGE Elements Have ALT Attributes"
+msgstr "Elementos de imagen tienen todos los atributos ALT"
+
+#: App/Models/RatTestAltAttributesOnImages.php:31
+msgid "Some images were found without ALT attributes."
+msgstr "Se encontraron algunas imágenes sin atributo ALT."
+
+#: App/Models/RatTestAltAttributesOnImages.php:40
+msgid "No images were found"
+msgstr "No hay imágenes encontradas"
+
+#: App/Models/RatTestBase.php:12
+msgid "Tests must include a text description of what the error is"
+msgstr "Hay que incluir una descripción textual del error para cada test"
+
+#: App/Models/RatTestCronActivated.php:8
+msgid "Cron Activated"
+msgstr "Cron activado"
+
+#: App/Models/RatTestCronActivated.php:15
+msgid "Cron is not disabled for this installation."
+msgstr "Cron no está deshabilitado para esta instalación."
+
+#: App/Models/RatTestFeaturedImage.php:8
+msgid "Home Page Featured Image"
+msgstr "Imagen destacada de la portada"
+
+#: App/Models/RatTestFeaturedImage.php:26
+#, php-format
+msgid ""
+"The home page has a featured image but it is not wide enough (%spx). It "
+"needs to be at least 1200px wide."
+msgstr ""
+"La página de inicia tiene una imagen destacada pero no es suficientemente "
+"ancha (%spx). Debe ser un mínimo de 1200px de ancho."
+
+#: App/Models/RatTestFeaturedImage.php:32
+#, php-format
+msgid ""
+"The home page has a featured image but it is not tall enough (%spx). It "
+"needs to be at least 300px high."
+msgstr ""
+"La página de inicia tiene una imagen destacada pero no es suficientemente "
+"alta (%spx). Debe ser un mínimo de 300px de alto."
+
+#: App/Models/RatTestFeaturedImage.php:39
+msgid "No featured image was found on the front page."
+msgstr "No se ha encontrado ninguna imagen destacada."
+
+#: App/Models/RatTestGA.php:8
+msgid "Google Analytics"
+msgstr "Google Analytics"
+
+#: App/Models/RatTestGA.php:19
+msgid "Google Analytics is installed: "
+msgstr "Google Analytics está instalado: "
+
+#: App/Models/RatTestGA.php:21
+msgid ""
+"Google Analytics does not appear to be configured. Please add the Google "
+"Analytics code to the site or we won't be able to track any user activity. "
+"We normally use MonsterInsights to do this."
+msgstr ""
+"Aparentemente Google Analytics no está configurado. Por favor, añade el "
+"código de Google Analytics a la web o no podremos realizar ningún "
+"seguimiento de actividad de usuarios. Normalmente instalamos MonsterInsights "
+"para ello."
+
+#: App/Models/RatTestGZIP.php:10
+msgid "GZIP compression"
+msgstr "Compresión GZIP"
+
+#: App/Models/RatTestGZIP.php:18
+msgid ""
+"The Content-Encoding header was not found in the response. This is usually "
+"due to a misconfiguration of your web server."
+msgstr ""
+"La cabecera Content-Encoding no se encontró en la respuesta. Normalmente "
+"indica una configuración errónea del servidor."
+
+#: App/Models/RatTestGZIP.php:32
+msgid "Content-Encoding does not appear to be gzip"
+msgstr "Content-Encoding no parece ser gzip"
+
+#: App/Models/RatTestHTMLValidity.php:8
+msgid "HTML Code Quality"
+msgstr "Calidad de código HTML"
+
+#: App/Models/RatTestHTMLValidity.php:28
+msgid "Unable to write the home page HTML to a file for testing: "
+msgstr ""
+"No se ha podido guardar el HTML de la página de inicio a un archivo para "
+"testear: "
+
+#: App/Models/RatTestHTMLValidity.php:33
+msgid ""
+"Unable to open a file for saving the home page HTML to a file for testing."
+msgstr ""
+"No se ha podido abrir un archivo para guardar el HTML de la página de inicio "
+"para poder realizar pruebas sobre ello."
+
+#: App/Models/RatTestHTMLValidity.php:46
+msgid "There was an error trying to validate the home page HTML."
+msgstr "Ha habido un error al intentar validar el HTML de la página de inicio."
+
+#: App/Models/RatTestHTTPS.php:10
+msgid "Running on HTTPS"
+msgstr "Utiliza HTTPS"
+
+#: App/Models/RatTestHTTPS.php:81
+msgid ""
+"HTTP traffic is not being redirected to HTTPS for one or more resources."
+msgstr ""
+"El tráfico sobre HTTP no se está redireccionando a HTTPS para una o más "
+"recursos."
+
+#: App/Models/RatTestHTTPS.php:88
+msgid " is (are) not being redirected to HTTPS."
+msgstr " no es (son) siendo redirigiros a HTTPS."
+
+#: App/Models/RatTestHTTPS.php:93
+msgid ""
+"Secure: it's on HTTPS but still have to check if all resources exist and are "
+"loaded over HTTPS."
+msgstr ""
+"Seguro: utiliza HTTPS pero aún tenemos que comprobar si todos los recursos "
+"existen y utilizan HTTPS."
+
+#: App/Models/RatTestHeadingElements.php:8
+msgid "H1 element exists"
+msgstr "Existe un elemento H1"
+
+#: App/Models/RatTestHeadingElements.php:29
+msgid "Can't find any H1 elements."
+msgstr "No se encuentra ningún elemento H1."
+
+#: App/Models/RatTestHeadingElements.php:33
+msgid "There are no heading elements."
+msgstr "No hay ningún elemento de encabezado (H1, H2, etc.)."
+
+#: App/Models/RatTestMetaDescription.php:12
+msgid "META DESCRIPTION Element"
+msgstr "Elemento META DESCRIPTION"
+
+#: App/Models/RatTestMetaDescription.php:46
+#, php-format
+msgid ""
+"The META DESCRIPTION element is either too long or too short. Descriptions "
+"should be between %1$s and %2$s characters. This meta description is %3$s "
+"character(s)"
+msgstr ""
+"El elemento META DESCRIPTION or es demasiado largo o demasiado corto. "
+"Descripciones debe tener entre %1$s y %2$s caracteres. Esta meta descripción "
+"tiene %3$s caracter(es)"
+
+#: App/Models/RatTestMetaDescription.php:60
+msgid "No META DESCRIPTION element could be found."
+msgstr "No se ha encontrado ningún elemento META DESCRIPTION."
+
+#: App/Models/RatTestMetaDescription.php:65
+msgid "More than one META DESCRIPTION element was found."
+msgstr "Se ha encontrado más de un elemento META DESCRIPTION."
+
+#: App/Models/RatTestNoEmoji.php:8
+msgid "Post Comment Emojis Removed"
+msgstr "Emojis de comentarios de posts desactivado"
+
+#: App/Models/RatTestNoEmoji.php:18
+msgid ""
+"Emojis support scripts are being loaded. WordPress must have changed or "
+"disable_wp_emojicons is not being called in the actionsAndFilters.php init "
+"sequence."
+msgstr ""
+"Los archivos de soporte para emojis se están cargando. O ha cambiado "
+"WordPress o la función disable_wp_emojicons no se está llamando en la "
+"secuencia de inicialización del archivo actionsAndFilters.php."
+
+#: App/Models/RatTestNoWPGenerator.php:8
+msgid "WP Generator Meta Tag Removed"
+msgstr "Etiqueta meta WP Generator quitada"
+
+#: App/Models/RatTestNoWPGenerator.php:18
+msgid ""
+"The Generator Meta Tag is still appearing. Chances are it has been hard-"
+"coded in header.php."
+msgstr ""
+"La etiqueta meta Generator aún existe. Es probable que esté incrustada en "
+"header.php."
+
+#: App/Models/RatTestOpenGraph.php:8
+msgid "Facebook (Open Graph) Tags Exist"
+msgstr "Existen etiquetas de Facebook (Open Graph)"
+
+#: App/Models/RatTestOpenGraph.php:30
+msgid "No OG: tags were found in the HTML."
+msgstr "No se han encontrado etiquetas OG: en el HTML."
+
+#: App/Models/RatTestQueryStrings.php:24
+msgid "Query strings on static resources (CSS & JS)"
+msgstr "Query strings en recursos estáticos (CSS y JS)"
+
+#: App/Models/RatTestQueryStrings.php:42
+#, php-format
+msgid "%s default ones exists. eg. ?ver=x.x.x"
+msgstr "Existen %s por defecto, por ejemplo: ?ver=x.x.x"
+
+#: App/Models/RatTestQueryStrings.php:50
+msgid "Default query strings are being stripped out."
+msgstr "Los query strings por defecto se están suprimiendo."
+
+#: App/Models/RatTestRobotsMeta.php:8
+msgid "Robots Meta Tag"
+msgstr "Etiqueta Meta de Robots"
+
+#: App/Models/RatTestRobotsMeta.php:20
+msgid "The page is being blocked by a meta robots tag"
+msgstr "Una etiqueta meta de robots está denegando acceso a la página"
+
+#: App/Models/RatTestRobotsMeta.php:24
+msgid "There is a robots meta tag but it is not blocking robots."
+msgstr ""
+"Existe una etiqueta meta de robots pero no está denegando acceso a los "
+"robots."
+
+#: App/Models/RatTestRobotsMeta.php:28
+msgid "No robots meta tags were found. This is normally good."
+msgstr ""
+"No se ha encontrado ningún elemento meta de robots. Normalmente se considera "
+"una buena práctica."
+
+#: App/Models/RatTestRobotstxt.php:8
+msgid "Site Indexing (robots.txt)"
+msgstr "Indexación del sitio (robots.txt)"
+
+#: App/Models/RatTestRobotstxt.php:18
+msgid ""
+"A robots.txt file was found. It is up to you to determine if it is correct "
+"or not."
+msgstr ""
+"Se ha encontrado un archivo de robots.txt. Sólo tú puedes determinar si es "
+"correcto o no."
+
+#: App/Models/RatTestRobotstxt.php:22
+msgid ""
+"No robots.txt was found. Please use Yoast or some other tool to install "
+"robots.txt"
+msgstr ""
+"No se ha encontrado ningún archivo de robots.txt. Por favor, utiliza Yoast u "
+"otra herramienta para instalar robots.txt"
+
+#: App/Models/RatTestTitle.php:12
+msgid "TITLE Element"
+msgstr "Elemento TITLE"
+
+#: App/Models/RatTestTitle.php:48
+#, php-format
+msgid ""
+"The title element is either too long or too short. Titles should be between "
+"%1$s and %2$s characters."
+msgstr ""
+"El elemento Title o es demasiado largo o demasiado corto. Los elementos "
+"Title deben tener entre %1$s y %2$s caracteres."
+
+#: App/Models/RatTestTitle.php:60
+msgid "No title element could be found."
+msgstr "No se ha encontrado ningún elemento de Title."
+
+#: App/Models/RatTestTitle.php:65
+msgid "More than one title element was found."
+msgstr "Se ha encontrado más de un elemento Title."
+
+#: App/Models/RatTestViewport.php:8
+msgid "Viewport Setting"
+msgstr "Configuración de Viewport"
+
+#: App/Models/RatTestViewport.php:18
+msgid "Viewport tag exists: "
+msgstr "La etiqueta Viewport existe: "
+
+#: App/Models/RatTestViewport.php:20
+msgid "No viewport tags were found. This is normally bad."
+msgstr ""
+"No se ha encontrado ningún elemento meta de VIEWPORT. Debe haber por lo "
+"menos uno."
+
+#: App/Views/admin/report.php:2
+msgid "Ratify Checklist"
+msgstr "Ratify Checklist"
+
+#: App/Views/admin/report.php:6
+msgid ""
+"The Ratify Checklist helps you spot common technical issues with the home "
+"page of your web site. "
+msgstr ""
+"Ratify Checklist te ayuda a identificar errores comunes encontrados en la "
+"página de inicio de tu web. "
+
+#: App/Views/admin/report.php:7
+msgid ""
+"Under normal circumstances, the plugin will try to fix the issues for you "
+"automatically but where it can't, it will flag them for you here. "
+msgstr ""
+"En circunstancias normales, el plugin intentará arreglar los problemas "
+"automáticamente pero si no puede, lo indicará aquí. "
+
+#: App/Views/admin/report.php:8
+msgid ""
+"This plugin was created by <a href=\"https://secret-source.eu/\">Secret "
+"Source Technolgy</a>. We provide web application development services to "
+"clients throughout the world :-)"
+msgstr ""
+"Este plugin fue creado por <a href=“https://secret-source.eu/“>Secret Source "
+"Technology</a>. Proveemos servicios de desarrollo de aplicaciones web para "
+"clientes en todo el mundo :-)"
+
+#: App/Views/admin/report.php:13
+#, php-format
+msgid "Test results for <a href=\"%1$s\">%2$s</a>."
+msgstr "Resultados para <a href=“%1$s”>%2$s</a>."
+
+#: App/Views/admin/report.php:20
+msgid "Test input is cached."
+msgstr "Los datos de entrada están cacheadas."
+
+#: App/Views/admin/report.php:20
+msgid "Click here to refresh the cache."
+msgstr "Pincha aquí para refrescar el cache."
+
+#: App/Views/admin/report.php:29
+msgid ""
+"Remember that you need to edit the page that the images appear in to change "
+"the ALT attributes."
+msgstr ""
+"Recuerda que tienes que editar la página donde aparecen las imágenes para "
+"modificar los atributos ALT."
+
+#: App/Views/admin/report.php:32
+msgid "Modify this setting"
+msgstr "Modificar este ajuste"
+
+#: App/Views/admin/report.php:47
+msgid "Background and Suggestions"
+msgstr "Más información y sugerencias"
+
+#. Plugin Name of the plugin/theme
+msgid "Ratify"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://secret-source.eu/plugins/ratify"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Verify (ratify) the technical quality of your web site."
+msgstr "Verifica (ratifica) la calidad técnica de tu web."
+
+#. Author of the plugin/theme
+msgid "Ted Stresen-Reuter, Radu Braniscan"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://secret-source.eu/"
+msgstr ""
+
+#~ msgid "Check for updates"
+#~ msgstr "Buscar actualizaciones"
+
+#~ msgid "View details"
+#~ msgstr "Ver detalles"
+
+#~ msgid "More information about %s"
+#~ msgstr "Más información sobre nosotros %s"
+
+#~ msgctxt "the plugin title"
+#~ msgid "The %s plugin is up to date."
+#~ msgstr "Esta es la última versión de %s."
+
+#~ msgctxt "the plugin title"
+#~ msgid "A new version of the %s plugin is available."
+#~ msgstr "Una nueva versión de %s está disponible."
+
+#~ msgctxt "the plugin title"
+#~ msgid "Could not determine if updates are available for %s."
+#~ msgstr "No se ha podido determinar si existen o no actualizaciones para %s."
+
+#~ msgid "Unknown update checker status \"%s\""
+#~ msgstr "Estado de revisor de actualizaciones “%s” desconocido"
+
+#~ msgid "There is no changelog available."
+#~ msgstr "No hay changelog disponible."

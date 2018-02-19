@@ -1,0 +1,352 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Ratify\n"
+"POT-Creation-Date: 2018-02-19 00:15+0000\n"
+"PO-Revision-Date: 2018-02-17 18:22+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: ratify-plugin.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: App/Controllers/RatifyReportGenerator.php:24
+msgid "The cache has been refreshed!"
+msgstr ""
+
+#: App/Controllers/RatifyReportGenerator.php:103
+msgid "Ratify Error"
+msgstr ""
+
+#: App/Controllers/RatifyReportGenerator.php:105
+msgid "Oops! We were unable to retrieve the home page."
+msgstr ""
+
+#: App/Models/RatTestAltAttributesOnImages.php:8
+msgid "IMAGE Elements Have ALT Attributes"
+msgstr ""
+
+#: App/Models/RatTestAltAttributesOnImages.php:31
+msgid "Some images were found without ALT attributes."
+msgstr ""
+
+#: App/Models/RatTestAltAttributesOnImages.php:40
+msgid "No images were found"
+msgstr ""
+
+#: App/Models/RatTestBase.php:12
+msgid "Tests must include a text description of what the error is"
+msgstr ""
+
+#: App/Models/RatTestCronActivated.php:8
+msgid "Cron Activated"
+msgstr ""
+
+#: App/Models/RatTestCronActivated.php:15
+msgid "Cron is not disabled for this installation."
+msgstr ""
+
+#: App/Models/RatTestFeaturedImage.php:8
+msgid "Home Page Featured Image"
+msgstr ""
+
+#: App/Models/RatTestFeaturedImage.php:26
+#, php-format
+msgid ""
+"The home page has a featured image but it is not wide enough (%spx). It "
+"needs to be at least 1200px wide."
+msgstr ""
+
+#: App/Models/RatTestFeaturedImage.php:32
+#, php-format
+msgid ""
+"The home page has a featured image but it is not tall enough (%spx). It "
+"needs to be at least 300px high."
+msgstr ""
+
+#: App/Models/RatTestFeaturedImage.php:39
+msgid "No featured image was found on the front page."
+msgstr ""
+
+#: App/Models/RatTestGA.php:8
+msgid "Google Analytics"
+msgstr ""
+
+#: App/Models/RatTestGA.php:19
+msgid "Google Analytics is installed: "
+msgstr ""
+
+#: App/Models/RatTestGA.php:21
+msgid ""
+"Google Analytics does not appear to be configured. Please add the Google "
+"Analytics code to the site or we won't be able to track any user activity. "
+"We normally use MonsterInsights to do this."
+msgstr ""
+
+#: App/Models/RatTestGZIP.php:10
+msgid "GZIP compression"
+msgstr ""
+
+#: App/Models/RatTestGZIP.php:18
+msgid ""
+"The Content-Encoding header was not found in the response. This is usually "
+"due to a misconfiguration of your web server."
+msgstr ""
+
+#: App/Models/RatTestGZIP.php:32
+msgid "Content-Encoding does not appear to be gzip"
+msgstr ""
+
+#: App/Models/RatTestHTMLValidity.php:8
+msgid "HTML Code Quality"
+msgstr ""
+
+#: App/Models/RatTestHTMLValidity.php:28
+msgid "Unable to write the home page HTML to a file for testing: "
+msgstr ""
+
+#: App/Models/RatTestHTMLValidity.php:33
+msgid ""
+"Unable to open a file for saving the home page HTML to a file for testing."
+msgstr ""
+
+#: App/Models/RatTestHTMLValidity.php:46
+msgid "There was an error trying to validate the home page HTML."
+msgstr ""
+
+#: App/Models/RatTestHTTPS.php:10
+msgid "Running on HTTPS"
+msgstr ""
+
+#: App/Models/RatTestHTTPS.php:81
+msgid ""
+"HTTP traffic is not being redirected to HTTPS for one or more resources."
+msgstr ""
+
+#: App/Models/RatTestHTTPS.php:88
+msgid " is (are) not being redirected to HTTPS."
+msgstr ""
+
+#: App/Models/RatTestHTTPS.php:93
+msgid ""
+"Secure: it's on HTTPS but still have to check if all resources exist and are "
+"loaded over HTTPS."
+msgstr ""
+
+#: App/Models/RatTestHeadingElements.php:8
+msgid "H1 element exists"
+msgstr ""
+
+#: App/Models/RatTestHeadingElements.php:29
+msgid "Can't find any H1 elements."
+msgstr ""
+
+#: App/Models/RatTestHeadingElements.php:33
+msgid "There are no heading elements."
+msgstr ""
+
+#: App/Models/RatTestMetaDescription.php:12
+msgid "META DESCRIPTION Element"
+msgstr ""
+
+#: App/Models/RatTestMetaDescription.php:46
+#, php-format
+msgid ""
+"The META DESCRIPTION element is either too long or too short. Descriptions "
+"should be between %1$s and %2$s characters. This meta description is %3$s "
+"character(s)"
+msgstr ""
+
+#: App/Models/RatTestMetaDescription.php:60
+msgid "No META DESCRIPTION element could be found."
+msgstr ""
+
+#: App/Models/RatTestMetaDescription.php:65
+msgid "More than one META DESCRIPTION element was found."
+msgstr ""
+
+#: App/Models/RatTestNoEmoji.php:8
+msgid "Post Comment Emojis Removed"
+msgstr ""
+
+#: App/Models/RatTestNoEmoji.php:18
+msgid ""
+"Emojis support scripts are being loaded. WordPress must have changed or "
+"disable_wp_emojicons is not being called in the actionsAndFilters.php init "
+"sequence."
+msgstr ""
+
+#: App/Models/RatTestNoWPGenerator.php:8
+msgid "WP Generator Meta Tag Removed"
+msgstr ""
+
+#: App/Models/RatTestNoWPGenerator.php:18
+msgid ""
+"The Generator Meta Tag is still appearing. Chances are it has been hard-"
+"coded in header.php."
+msgstr ""
+
+#: App/Models/RatTestOpenGraph.php:8
+msgid "Facebook (Open Graph) Tags Exist"
+msgstr ""
+
+#: App/Models/RatTestOpenGraph.php:30
+msgid "No OG: tags were found in the HTML."
+msgstr ""
+
+#: App/Models/RatTestQueryStrings.php:24
+msgid "Query strings on static resources (CSS & JS)"
+msgstr ""
+
+#: App/Models/RatTestQueryStrings.php:42
+#, php-format
+msgid "%s default ones exists. eg. ?ver=x.x.x"
+msgstr ""
+
+#: App/Models/RatTestQueryStrings.php:50
+msgid "Default query strings are being stripped out."
+msgstr ""
+
+#: App/Models/RatTestRobotsMeta.php:8
+msgid "Robots Meta Tag"
+msgstr ""
+
+#: App/Models/RatTestRobotsMeta.php:20
+msgid "The page is being blocked by a meta robots tag"
+msgstr ""
+
+#: App/Models/RatTestRobotsMeta.php:24
+msgid "There is a robots meta tag but it is not blocking robots."
+msgstr ""
+
+#: App/Models/RatTestRobotsMeta.php:28
+msgid "No robots meta tags were found. This is normally good."
+msgstr ""
+
+#: App/Models/RatTestRobotstxt.php:8
+msgid "Site Indexing (robots.txt)"
+msgstr ""
+
+#: App/Models/RatTestRobotstxt.php:18
+msgid ""
+"A robots.txt file was found. It is up to you to determine if it is correct "
+"or not."
+msgstr ""
+
+#: App/Models/RatTestRobotstxt.php:22
+msgid ""
+"No robots.txt was found. Please use Yoast or some other tool to install "
+"robots.txt"
+msgstr ""
+
+#: App/Models/RatTestTitle.php:12
+msgid "TITLE Element"
+msgstr ""
+
+#: App/Models/RatTestTitle.php:48
+#, php-format
+msgid ""
+"The title element is either too long or too short. Titles should be between "
+"%1$s and %2$s characters."
+msgstr ""
+
+#: App/Models/RatTestTitle.php:60
+msgid "No title element could be found."
+msgstr ""
+
+#: App/Models/RatTestTitle.php:65
+msgid "More than one title element was found."
+msgstr ""
+
+#: App/Models/RatTestViewport.php:8
+msgid "Viewport Setting"
+msgstr ""
+
+#: App/Models/RatTestViewport.php:18
+msgid "Viewport tag exists: "
+msgstr ""
+
+#: App/Models/RatTestViewport.php:20
+msgid "No viewport tags were found. This is normally bad."
+msgstr ""
+
+#: App/Views/admin/report.php:2
+msgid "Ratify Checklist"
+msgstr ""
+
+#: App/Views/admin/report.php:6
+msgid ""
+"The Ratify Checklist helps you spot common technical issues with the home "
+"page of your web site. "
+msgstr ""
+
+#: App/Views/admin/report.php:7
+msgid ""
+"Under normal circumstances, the plugin will try to fix the issues for you "
+"automatically but where it can't, it will flag them for you here. "
+msgstr ""
+
+#: App/Views/admin/report.php:8
+msgid ""
+"This plugin was created by <a href=\"https://secret-source.eu/\">Secret "
+"Source Technolgy</a>. We provide web application development services to "
+"clients throughout the world :-)"
+msgstr ""
+
+#: App/Views/admin/report.php:13
+#, php-format
+msgid "Test results for <a href=\"%1$s\">%2$s</a>."
+msgstr ""
+
+#: App/Views/admin/report.php:20
+msgid "Test input is cached."
+msgstr ""
+
+#: App/Views/admin/report.php:20
+msgid "Click here to refresh the cache."
+msgstr ""
+
+#: App/Views/admin/report.php:29
+msgid ""
+"Remember that you need to edit the page that the images appear in to change "
+"the ALT attributes."
+msgstr ""
+
+#: App/Views/admin/report.php:32
+msgid "Modify this setting"
+msgstr ""
+
+#: App/Views/admin/report.php:47
+msgid "Background and Suggestions"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Ratify"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://secret-source.eu/plugins/ratify"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Verify (ratify) the technical quality of your web site."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Ted Stresen-Reuter, Radu Braniscan"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://secret-source.eu/"
+msgstr ""
