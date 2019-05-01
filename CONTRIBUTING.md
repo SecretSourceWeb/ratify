@@ -61,12 +61,29 @@ First, make sure [phpunit is installed](https://phpunit.de/manual/6.5/en/install
 
 ### Issues Installing and Configuring phpcs
 
-The beauty of `phpcs` is it's integration with vscode. You can see right in your editor where the problems are (and fix them, hopefully). However, getting phpcs up and running is not an easy task. Here is our  recommended configuration:
+The beauty of `phpcs` is it's integration with vscode. You can see right 
+in your editor where the problems are (and fix them, hopefully). However, 
+getting phpcs up and running is not an easy task. Fortunately, thanks in
+part to wprig (who showed us how to do this), phpcs is not installed and
+configured automatically. No end user interaction required!
+
+If you install the [phpcs extension]() of vscode, it should pick up the
+repository configuration automatically. If not, here are the steps to 
+install phpcs globally.
 
 1. Install phpcs globally (normally ~/.composer/vendor/bin/phpcs)
 2. Install the [WordPress coding standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards) in a global location somewhere on your system, maybe ~/Sites/wpcs
-3. Tell phpcs to use the coding standards with `phpcs --config-set installed_paths /path/to/wpcs`
-4. Use the .phpcs.xml.dist file found in this repository (copy it to your own project)
+3. Tell phpcs to use the coding standards with 
+	`phpcs --config-set installed_paths (comma-delimited set of paths to your coding standards)`. 
+	For example, since I have coding standards in ~/Sites/wpcs and in 
+	~/.composer/vendor/phpcompatibility/phpcompatibility-wp, the command 
+	for me is 
+`phpcs --config-set installed_paths \
+	'/Users/tedsr/Sites/wordpress/wpcs,\
+	/Users/tedsr/.composer/vendor/phpcompatibility/php-compatibility,\
+	/Users/tedsr/.composer/vendor/phpcompatibility/phpcompatibility-paragonie,\
+	/Users/tedsr/.composer/vendor/phpcompatibility/phpcompatibility-wp'`.
+4. Use the `phpcs.xml.dist` file found in this repository (copy it to your own project)
 
 ## References ##
 
