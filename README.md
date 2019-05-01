@@ -59,3 +59,4 @@ The "[approved](https://svgsilh.com/image/1966719.html)" stamp used with permiss
 1.0 - Initial release
 1.0.1 - Fixed formatting in readme and made it pretty and tweaked the test for Google Analytics (in the prior version)
 1.0.2 - Fixed some readme formatting
+1.0.3 - Moved the master repository to [github](https://github.com/SecretSourceWeb/ratify)
