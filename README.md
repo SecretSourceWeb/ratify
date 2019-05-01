@@ -55,6 +55,13 @@ There are no special requirements to install this plugin. Just use the standard 
 # Copyright #
 The "[approved](https://svgsilh.com/image/1966719.html)" stamp used with permission.
 
+# Contributing #
+
+We're following [this gist](https://gist.github.com/kasparsd/3749872) to use github as the master repository.
+
+If you find an issues with this plugin, please submit tickets using github's issue tracking system.
+Be sure to state what the problem is, the steps to reproduce, the expected behavior and the actual behavior.
+
 # Changelog #
 
 1.0 - Initial release
