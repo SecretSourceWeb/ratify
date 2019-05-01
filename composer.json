@@ -1,0 +1,16 @@
+{
+  "name": "secret-source/ratify",
+  "description": "Ratify WordPress plugin",
+  "license": "GPL",
+  "require": {},
+  "config": {
+    "preferred-install": "dist",
+    "optimize-autoloader": true
+  },
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Ratify\\": "App/"
+    }
+  }
+}

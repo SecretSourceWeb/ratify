@@ -1,0 +1,77 @@
+## Node.js
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+pids
+logs/*
+results
+npm-debug.log
+node_modules
+
+# VSCode
+.vscode
+
+# Gulp
+Gulpfile.js
+
+## Bower
+# src/components
+
+## Sass
+.sass-cache
+
+## OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+.editorconfig
+*.bbprojectd
+
+## Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Ignore .scss files in build caused by the way gulp/gulp-ruby-sass handles errors
+build/**/*.scss
+
+# Map files
+*.map
+
+# Local testing folder
+testing
+
+# Vagrant
+.vagrant
+
+# Web/PHPstorm
+.idea
+.idea/
+
+# WordPress
+wp-config-local.php
+wp-config-live.php
+
+# PHP Testing
+!app/phpspec.yaml
+!app/phpunit.xml
+
+#Composer
+# /vendor
+
+.idea/encodings.xml
+.workspace
+
+#Sublime Text 3
+ratify-plugin.sublime-project
+ratify-plugin.sublime-workspace
