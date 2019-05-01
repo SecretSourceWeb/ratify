@@ -26,7 +26,9 @@ class RatTestHTTPS extends RatTestBase {
 
         $args = array(
             'sslverify' => false,
-            'redirection' => 0
+            'redirection' => 0,
+            'timeout' => 100,
+            'user-agent'  => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
         );
 
         // Is the home page on HTTPS?
