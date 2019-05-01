@@ -1,19 +1,32 @@
 {
-  "name": "secret-source/ratify",
-  "description": "Ratify WordPress plugin",
-  "license": "GPL",
-  "require": {},
-  "config": {
-    "preferred-install": "dist",
-    "optimize-autoloader": true
-  },
-  "minimum-stability": "stable",
-  "autoload": {
-    "psr-4": {
-      "Ratify\\": "App/"
+    "name": "secret-source/ratify",
+    "description": "Ratify WordPress plugin",
+    "type": "wordpress-plugin",
+    "license": "GPL",
+    "require": {},
+    "config": {
+        "preferred-install": "dist",
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Ratify\\": "App/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6",
+        "wp-coding-standards/wpcs": "^1.0.0",
+        "phpcompatibility/php-compatibility": "^8.2.0",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.4.4"
+    },
+    "scripts": {
+        "install-codestandards": [
+            "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
+        ],
+        "phpcs-dev": "\"vendor/bin/phpcs\"",
+        "run-phpcs": [
+            "@phpcs-dev"
+        ]
     }
-  },
-  "require-dev": {
-    "phpunit/phpunit": "^6"
-  }
 }

@@ -67,7 +67,7 @@ wp-config-live.php
 !app/phpunit.xml
 
 #Composer
-# /vendor
+/vendor
 
 .idea/encodings.xml
 .workspace
