@@ -1,10 +1,10 @@
 # Ratify #
-Contributors: secretsource,tedmaster
-Tags: seo,accessibility,html5,checklist
-Requires at least: 4.8
-Tested up to: 4.9
-Requires PHP: 7.1
-License: GPL 2
+Contributors: secretsource,tedmaster  
+Tags: seo,accessibility,html5,checklist  
+Requires at least: 4.8  
+Tested up to: 4.9  
+Requires PHP: 7.1  
+License: GPL 2  
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 
 A plugin that helps keep us from publishing sites with basic configuration errors. It is an automated checklist of common issues in WordPress sites.
@@ -64,10 +64,7 @@ Be sure to state what the problem is, the steps to reproduce, the expected behav
 
 # Changelog #
 
-1.0 - Initial release
-
-1.0.1 - Fixed formatting in readme and made it pretty and tweaked the test for Google Analytics (in the prior version)
-
-1.0.2 - Fixed some readme formatting
-
-1.0.3 - Moved the master repository to [github](https://github.com/SecretSourceWeb/ratify)
+1.0 - Initial release  
+1.0.1 - Fixed formatting in readme and made it pretty and tweaked the test for Google Analytics (in the prior version)  
+1.0.2 - Fixed some readme formatting  
+1.0.3 - Moved the master repository to [github](https://github.com/SecretSourceWeb/ratify)  
