@@ -8,7 +8,7 @@
  * that starts the plugin.
  *
  * @link              https://secret-source.eu/
- * @since             1.0
+ * @since             1.0.4
  * @package           Ratify
  *
  * @wordpress-plugin
@@ -16,7 +16,7 @@
  * Plugin URI:        https://secret-source.eu/plugins/ratify
  * Description:       Verify (ratify) the technical quality of your web site.
  * Version:           1.0
- * Author:            Ted Stresen-Reuter, Radu Braniscan
+ * Author:            Ted Stresen-Reuter
  * Author URI:        https://secret-source.eu/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt

@@ -28,6 +28,9 @@ class RatTestAltAttributesOnImages extends RatTestBase {
 	/**
 	 * Runs (is) the actual test.
 	 *
+	 * Gets a list of every IMG element on the page and tests to make sure
+	 * they all have non-empty ALT attributes.
+	 *
 	 * @param string $in The HTML to test. Normally the front page.
 	 */
 	public function runtest( $in = '' ) {
