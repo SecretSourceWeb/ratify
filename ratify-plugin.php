@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The plugin bootstrap file
  *
@@ -30,13 +29,11 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-// very helpful link https://wordpress.stackexchange.com/questions/63668/autoloading-namespaces-in-wordpress-plugins-themes-can-it-work
-
 require_once __DIR__ . '/vendor/autoload.php';
 
 define( 'RATIFY_VERSION', '1.0' );
-define( 'RATIFY_PLUGIN_DIR', plugin_dir_path(__FILE__) );
-define( 'RATIFY_PLUGIN_URL', plugin_dir_url(__FILE__) );
+define( 'RATIFY_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
+define( 'RATIFY_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'RATIFY_PLUGIN_FOLDER_NAME', dirname( plugin_basename( __FILE__ ) ) );
 
 /**
@@ -58,6 +55,5 @@ register_deactivation_hook( __FILE__, 'deactivate_ratify' );
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-// require plugin_dir_path( __FILE__ ) . 'includes/class-ratify.php';
 
 \Ratify\Controllers\RatifyLoader::load();
