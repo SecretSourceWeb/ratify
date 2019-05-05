@@ -36,7 +36,11 @@ class RatifyNotifier {
 	 * method adds a $msg to the notice queue with the notice type of
 	 * $class.
 	 *
-	 * @param string $msg The text of the notice to display.
+	 * Note that the $msg needs to be translated before entering this
+	 * method. See this link for an explanation why:
+	 * https://wordpress.stackexchange.com/questions/307345/translate-a-constant-while-appeasing-wordpress-phpcs
+	 *
+	 * @param string $msg The translated text of the notice to display.
 	 * @param string $class The notice class to use for display. Default is 'success'.
 	 */
 	public static function get_HTML( $msg, $class ) {
@@ -44,8 +48,8 @@ class RatifyNotifier {
 			'admin_notices',
 			function( $msg, $class ) {
 				?>
-				<div class="notice notice-<?php echo $class; ?> is-dismissible">
-					<p><?php esc_html__( $msg, 'ratify' ); ?></p>
+				<div class="notice notice-<?php echo esc_attr( $class ); ?> is-dismissible">
+					<p><?php echo esc_html( $msg ); ?></p>
 				</div>
 				<?php
 			}
