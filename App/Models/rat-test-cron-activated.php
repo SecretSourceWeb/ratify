@@ -1,6 +1,6 @@
 <?php
 /**
- * Ratify Core API: RatTestAltAttributesOnImages class
+ * Ratify Core API: RatTestCronActivated class
  *
  * @package   Ratify
  * @author    Ted Stresen-Reuter <ted@secret-source.eu>
