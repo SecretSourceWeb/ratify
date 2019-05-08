@@ -72,3 +72,5 @@ Be sure to state what the problem is, the steps to reproduce, the expected behav
 1.0.1 - Fixed formatting in readme and made it pretty and tweaked the test for Google Analytics (in the prior version)  
 1.0.2 - Fixed some readme formatting  
 1.0.3 - Moved the master repository to [github](https://github.com/SecretSourceWeb/ratify)  
+1.0.4 - Fixed file names to be PHPCS compliant. Also fixed other phpcs compliance issues throughout
+1.1   - Completely PHPCS valid following all WordPress coding style guidelines.

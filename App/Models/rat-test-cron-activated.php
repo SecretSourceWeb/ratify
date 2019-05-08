@@ -1,6 +1,6 @@
 <?php
 /**
- * Ratify Core API: RatTestCronActivated class
+ * Ratify Test: RatTestCronActivated class
  *
  * @package   Ratify
  * @author    Ted Stresen-Reuter <ted@secret-source.eu>
@@ -34,6 +34,7 @@ class RatTestCronActivated extends RatTestBase {
 	 * defined and set to true.
 	 *
 	 * @param string $in The HTML to test. Normally the front page.
+	 * @return array An associative array including the following elements: error, data, title, warning_url, and modify_url
 	 */
 	public function runtest( $in = '' ) {
 		parent::runtest();

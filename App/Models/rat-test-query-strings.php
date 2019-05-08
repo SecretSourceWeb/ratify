@@ -1,79 +1,100 @@
 <?php
+/**
+ * Ratify Test: RatTestQueryStrings class
+ *
+ * @package   Ratify
+ * @author    Ted Stresen-Reuter <ted@secret-source.eu>
+ * @copyright 2018 Secret Source Technology SL
+ * @license   https://github.com/SecretSourceWeb/ratify/blob/master/LICENSE.txt GNU General Public License v2.0
+ */
+
 namespace Ratify\Models;
 
-// to do in the premium version of the plugin RATp Actioner
-// add fix
-// the benefit of this is that it will increase cacheability of these resources for sites that use SuperCache or Cloudflare.
-// open the functions.php file of the active theme
-// add this code to the end of the file
-// function ratp_remove_ver_from_resources( $src ) {
-    // if( strpos( $src, 'ver=' ) ) {
-        // $src = remove_query_arg( 'ver', $src );
-    // }
-    // return $src;
-// }
-// add_filter( 'style_loader_src', 'ratp_remove_ver_from_resources', 9999 );
-// add_filter( 'script_loader_src', 'ratp_remove_ver_from_resources', 9999 );
-
+/**
+ * Tests if default query strings are being appended to css and js in the HTML.
+ * Includes a method for removing them that runs by default.
+ */
 class RatTestQueryStrings extends RatTestBase {
 
-    public function __construct( $in = null ) {
+	/**
+	 * Constructor.
+	 *
+	 * @param string $in The HTML to test. Normally the front page.
+	 */
+	public function __construct( $in = null ) {
+		parent::__construct( $in );
+		$this->out['title'] = __( 'Query strings on static resources (CSS & JS)', 'ratify' );
+	}
 
-        parent::__construct( $in );
+	/**
+	 * Tests if default query strings are being appended to css and js in the HTML.
+	 *
+	 * @param string $in string HTML to be examined.
+	 * @return boolean|array True if test passes, array otherwise
+	 *    $out['title'] = string Title of this test
+	 *    $out['error'] = string false or string if true
+	 *    $out['data'] = array The data we are testing
+	 */
+	public function runtest( $in = '' ) {
+		if ( '' !== $in ) {
+			$this->in = $in;
+		}
 
-        $this->out['title'] = __( 'Query strings on static resources (CSS & JS)', 'ratify' );
-//        $this->out['modify_url'] = 'https://sites.google.com/a/secret-source.eu/wiki/projects/ratp-plugin-solutions-fixes#query';
+		$res = $this->grep_html( $this->in, '@\?ver=[0-9\.]+@ims' );
 
-    }
+		if ( $res['total'] > 0 ) {
 
-    public function runtest( $in = '' ) {
+			$this->out['error'] = sprintf(
+				/* translators: 1: Total number of css or js files with default query strings appended */
+				__( '%s default ones exists. eg. ?ver=x.x.x', 'ratify' ),
+				$res['total']
+			);
 
-        if ( '' != $in ) {
+		} else {
 
-            $this->in = $in;
+			$this->out['error'] = false;
+			$this->out['data']  = [
+				sprintf(
+					/* translators: 1: Can't remember exactly what this string is. Sorry! */
+					__( 'Default query strings are being stripped out. %s', 'ratify' ),
+					$res['out'][0][0]
+				),
+			];
 
-        }
+		}
 
-        $res = $this->grep_html( $this->in, '@\?ver=[0-9\.]+@ims' );
+		return $this->out;
 
-        if( $res['total'] > 0 ) {
+	}
 
-            $this->out['error'] = sprintf(
-                __( '%s default ones exists. eg. ?ver=x.x.x', 'ratify' ),
-                $res['total']
-            );
-
-        } else {
-
-            $this->out['error'] = false;
-
-            $this->out['data'] = Array( __( 'Default query strings are being stripped out.' . $res['out'][0][0], 'ratify' ) );
-
-        }
-
-        return $this->out;
-
-    }
-
-    public static function strip_default_query_stings( $link ) {
-        global $wp_version;
-        $newlink = $link;
-        if ( false !== stripos( $link, '<link' ) ) {
-            $tot = preg_match( '@href=(\'|")([^\'"]+?)(\'|")@i', $link, $pcs );
-            $href = $pcs[2];
-        } else {
-            $tot = 1;
-            $href = $link;
-        }
-        if ( $tot > 0 ) {
-            if ( false !== stripos( $href, '?ver=' . $wp_version ) ) {
-                // strip off the version
-                $newhref = remove_query_arg( 'ver', $href );
-                $newlink = str_replace( $href, $newhref, $link );
-            }
-        }
-        return $newlink;
-    }
+	/**
+	 * Removes default query strings.
+	 *
+	 * @param string $link string URL that might need to have a query string removed.
+	 * @return string The $link with the query string removed
+	 *    $out['title'] = string Title of this test
+	 *    $out['error'] = string false or string if true
+	 *    $out['data'] = array The data we are testing
+	 */
+	public static function strip_default_query_stings( $link ) {
+		global $wp_version;
+		$newlink = $link;
+		if ( false !== stripos( $link, '<link' ) ) {
+			$tot  = preg_match( '@href=(\'|")([^\'"]+?)(\'|")@i', $link, $pcs );
+			$href = $pcs[2];
+		} else {
+			$tot  = 1;
+			$href = $link;
+		}
+		if ( $tot > 0 ) {
+			if ( false !== stripos( $href, '?ver=' . $wp_version ) ) {
+				// strip off the version.
+				$newhref = remove_query_arg( 'ver', $href );
+				$newlink = str_replace( $href, $newhref, $link );
+			}
+		}
+		return $newlink;
+	}
 
 }
 

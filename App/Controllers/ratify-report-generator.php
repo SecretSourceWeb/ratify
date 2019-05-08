@@ -28,7 +28,7 @@ class RatifyReportGenerator {
 		$break_cache_url = false;
 
 		if ( empty( $_GET['refresh'] ) ) {
-			$break_cache_url = admin_url( 'admin.php?page=ratify-report&refresh=1' );
+			$break_cache_url = esc_url( add_query_arg( [ 'refresh' => '1' ] ) );
 		}
 
 		$home_page_html = $this->get_home_page_html();
@@ -131,12 +131,12 @@ class RatifyReportGenerator {
 		$args           = array(
 			'sslverify' => false,
 		);
-		if ( false === $home_page_html or '' == $home_page_html or ! empty( $_GET['refresh'] ) ) {
+		if ( false === $home_page_html || '' === $home_page_html || ! empty( $_GET['refresh'] ) ) {
 			$home_page_html = wp_remote_retrieve_body(
 				wp_remote_get( home_url(), $args )
 			);
 			// did we actually get a page?
-			if ( '' == $home_page_html ) {
+			if ( '' === $home_page_html ) {
 				$res = wp_remote_get( home_url(), $args );
 				?>
 				<h2><?php esc_html_e( 'Ratify Error', 'ratify' ); ?></h2>
@@ -144,7 +144,7 @@ class RatifyReportGenerator {
 					<p><?php esc_html_e( 'Oops! We were unable to retrieve the home page.', 'ratify' ); ?></p>
 				</div>
 				<?php
-				wp_die( $res );
+				wp_die( esc_html( $res ) );
 			}
 			set_transient( 'ratp-home-page-html', $home_page_html, MINUTE_IN_SECONDS * 120 );
 			set_transient( 'ratp-cache-refreshed', true, MINUTE_IN_SECONDS );

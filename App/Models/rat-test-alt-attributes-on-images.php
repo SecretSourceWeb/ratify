@@ -1,6 +1,6 @@
 <?php
 /**
- * Ratify Core API: RatTestAltAttributesOnImages class
+ * Ratify Test: RatTestAltAttributesOnImages class
  *
  * @package   Ratify
  * @author    Ted Stresen-Reuter <ted@secret-source.eu>
@@ -31,6 +31,7 @@ class RatTestAltAttributesOnImages extends RatTestBase {
 	 * Gets a list of every IMG element on the page and tests to make sure
 	 * they all have non-empty ALT attributes.
 	 *
+	 * @return array An associative array including the following elements: error, data, title, warning_url, and modify_url
 	 * @param string $in The HTML to test. Normally the front page.
 	 */
 	public function runtest( $in = '' ) {

@@ -55,6 +55,7 @@ class RatTestBase {
 	 * test to run (ergo, the name).
 	 *
 	 * @param string $in The HTML to test. Can also be a string of any content.
+	 * @return array An associative array including the following elements: error, data, title, warning_url, and modify_url
 	 */
 	public function runtest( $in = '' ) {
 		do_action( 'ratp_runtest_start' );
