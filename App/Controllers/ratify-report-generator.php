@@ -144,7 +144,7 @@ class RatifyReportGenerator {
 					<p><?php esc_html_e( 'Oops! We were unable to retrieve the home page.', 'ratify' ); ?></p>
 				</div>
 				<?php
-				wp_die( esc_html( $res ) );
+				wp_die( esc_html( var_dump( $res ) ) );
 			}
 			set_transient( 'ratp-home-page-html', $home_page_html, MINUTE_IN_SECONDS * 120 );
 			set_transient( 'ratp-cache-refreshed', true, MINUTE_IN_SECONDS );

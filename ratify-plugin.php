@@ -15,7 +15,7 @@
  * Plugin Name:       Ratify
  * Plugin URI:        https://secret-source.eu/plugins/ratify
  * Description:       Verify (ratify) the technical quality of your web site.
- * Version:           1.0
+ * Version:           1.1
  * Author:            Ted Stresen-Reuter
  * Author URI:        https://secret-source.eu/
  * License:           GPL-2.0+
