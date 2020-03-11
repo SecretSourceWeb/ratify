@@ -43,7 +43,7 @@ class RatTestHeadingElements extends RatTestBase {
 		if ( $res['total'] > 0 ) {
 			// is there at least one h1?
 			for ( $i = 0; $i < $res['total']; $i++ ) {
-				if ( 1 === $res['out'][1][ $i ] ) {
+				if ( '1' === $res['out'][1][ $i ] ) {
 					$this->out['error'] = false;
 					$this->out['data']  = [ wp_strip_all_tags( $res['out'][3][ $i ] ) ];
 				}
