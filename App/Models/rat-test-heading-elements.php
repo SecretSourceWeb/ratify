@@ -12,6 +12,7 @@ namespace Ratify\Models;
 
 /**
  * Tests if the home page contains H1, H2, etc. and if there are enough of them.
+ * Also tests to make sure there is only one H1.
  */
 class RatTestHeadingElements extends RatTestBase {
 
@@ -34,11 +35,13 @@ class RatTestHeadingElements extends RatTestBase {
 	 * @return array An associative array including the following elements: error, data, title, warning_url, and modify_url
 	 */
 	public function runtest( $in = '' ) {
+		do_action( 'ratp_runtest_start' );
 		if ( '' !== $in ) {
 			$this->in = $in;
 		}
 		$res      = $this->grep_html( $this->in, '@<h([1-6])(.*?)>(.*?)</h(\\1)>@ims' );
 		$headings = [];
+		$h1s      = 0;
 
 		if ( $res['total'] > 0 ) {
 			// is there at least one h1?
@@ -46,6 +49,7 @@ class RatTestHeadingElements extends RatTestBase {
 				if ( '1' === $res['out'][1][ $i ] ) {
 					$this->out['error'] = false;
 					$this->out['data']  = [ wp_strip_all_tags( $res['out'][3][ $i ] ) ];
+					$h1s++;
 				}
 				$headings[] = 'H' . $res['out'][1][ $i ] . '. ' . wp_strip_all_tags( $res['out'][3][ $i ] );
 			}
@@ -53,11 +57,15 @@ class RatTestHeadingElements extends RatTestBase {
 			if ( false !== $this->out['error'] ) {
 				$this->out['error'] = __( 'Can\'t find any H1 elements.', 'ratify' );
 			}
+			if ( $h1s > 1 ) {
+				$this->out['error'] .= __( 'There is more than 1 H1 element.', 'ratify' );
+			}
 			$this->out['data'] = $headings;
 		} else {
 			$this->out['error'] = __( 'There are no heading elements.', 'ratify' );
 			$this->out['data']  = $headings;
 		}
+		do_action( 'ratp_runtest_end' );
 		return $this->out;
 	}
 }
